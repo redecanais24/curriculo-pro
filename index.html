@@ -84,6 +84,14 @@
   .section,.item {break-inside:avoid;}
 }
 </style>
+<style>
+@media print {
+  body .app .preview, body.showMobilePreview .app .preview, .app > .preview.panel {display:block!important;visibility:visible!important;opacity:1!important;}
+  body .app .editor{display:none!important;}
+  .previewBody .sheet, #resume{display:block!important;visibility:visible!important;opacity:1!important;}
+  .mobileTabs, .installStrip{display:none!important;}
+}
+</style>
 <meta name="theme-color" content="#5b46ff">
 <meta name="description" content="Crie currículos modernos com modelos profissionais, objetivo, profissões e foto opcional.">
 <meta name="application-name" content="Currículo Pro">
@@ -111,7 +119,7 @@
   <div class="previewBody"><div class="sheet"><div id="resume"></div></div></div>
 </section>
 </main>
-<div class="footer">Currículo Pro PWA 1.0 • gratuito • sem IA paga • dados salvos apenas no navegador</div>
+<div class="footer">Currículo Pro PWA 1.1 • gratuito • sem IA paga • dados salvos apenas no navegador</div>
 
 
 <script>
